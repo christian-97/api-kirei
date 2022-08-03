@@ -11,7 +11,7 @@ namespace api_peliculas.Migrations
                 name: "T_Actor",
                 columns: table => new
                 {
-                    //
+              
                     codigo = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     name = table.Column<string>(type: "nvarchar(max)", nullable: true),
