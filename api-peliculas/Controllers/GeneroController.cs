@@ -117,6 +117,7 @@ namespace api_peliculas.Controllers
             return NoContent();
 
             // agregado de comentario de prueba
+            //segundo
             /*
             var existe = await context.T_Genero
                 .AnyAsync(x => x.codigo == id);
