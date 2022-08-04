@@ -19,6 +19,6 @@ namespace api_peliculas.Entitys
         public string nombre { get; set; }
         [Required]
         public bool estado { get; set; }
-
+        //
     }
 }
