@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace api_peliculas.Entitys
 {
-    public class Genero
+    public class Producto
     {
         [Key]
         public int codigo { get; set; }

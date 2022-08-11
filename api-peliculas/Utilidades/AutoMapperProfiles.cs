@@ -8,8 +8,8 @@ namespace api_peliculas.Utilidades
     {
         public AutoMapperProfiles()
         {
-            CreateMap<Genero, GeneroDto>().ReverseMap();
-            CreateMap<GeneroInsertarDto, Genero>();
+            CreateMap<Producto, GeneroDto>().ReverseMap();
+            CreateMap<GeneroInsertarDto, Producto>();
         }
     }
 }

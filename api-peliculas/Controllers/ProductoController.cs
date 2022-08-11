@@ -19,15 +19,15 @@ namespace api_peliculas.Controllers
     [Route("api-peliculas/generos")]
     [ApiController]
     //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    public class GeneroController : ControllerBase
+    public class ProductoController : ControllerBase
     {
         
-        private readonly ILogger<GeneroController> logger;
+        private readonly ILogger<ProductoController> logger;
         private readonly ApplicationDbContext context;
         private readonly IMapper mapper;
 
-        public GeneroController(
-            ILogger<GeneroController> logger,
+        public ProductoController(
+            ILogger<ProductoController> logger,
             ApplicationDbContext context,
             IMapper mapper
             )
@@ -78,7 +78,7 @@ namespace api_peliculas.Controllers
         [HttpPost]
         public async Task<ActionResult> add([FromBody] GeneroInsertarDto generodto)
         {
-            var genero=mapper.Map<Genero>(generodto);
+            var genero=mapper.Map<Producto>(generodto);
             context.Add(genero);
             await context.SaveChangesAsync();
             return NoContent();

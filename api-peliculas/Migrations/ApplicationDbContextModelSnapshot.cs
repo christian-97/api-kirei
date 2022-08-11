@@ -19,7 +19,7 @@ namespace api_peliculas.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("api_peliculas.Entidades.Actor", b =>
+            modelBuilder.Entity("api_peliculas.Entidades.Usuario", b =>
                 {
                     b.Property<int>("codigo")
                         .ValueGeneratedOnAdd()
@@ -45,10 +45,10 @@ namespace api_peliculas.Migrations
 
                     b.HasKey("codigo");
 
-                    b.ToTable("T_Actor");
+                    b.ToTable("T_Usuario");
                 });
 
-            modelBuilder.Entity("api_peliculas.Entitys.Genero", b =>
+            modelBuilder.Entity("api_peliculas.Entitys.Producto", b =>
                 {
                     b.Property<int>("codigo")
                         .ValueGeneratedOnAdd()

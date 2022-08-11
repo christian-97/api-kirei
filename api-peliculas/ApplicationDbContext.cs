@@ -12,8 +12,8 @@ namespace api_peliculas
         {
         }
 
-        public DbSet<Genero> T_Genero { get; set; }
-        public DbSet<Actor> T_Actor { get; set; }
+        public DbSet<Producto> T_Genero { get; set; }
+        public DbSet<Usuario> T_Usuario { get; set; }
 
     }
 }

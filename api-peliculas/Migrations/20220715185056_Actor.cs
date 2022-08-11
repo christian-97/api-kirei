@@ -8,7 +8,7 @@ namespace api_peliculas.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "T_Actor",
+                name: "T_Usuario",
                 columns: table => new
                 {
                     //
@@ -21,14 +21,14 @@ namespace api_peliculas.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_T_Actor", x => x.codigo);
+                    table.PrimaryKey("PK_T_Usuario", x => x.codigo);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "T_Actor");
+                name: "T_Usuario");
         }
     }
 }

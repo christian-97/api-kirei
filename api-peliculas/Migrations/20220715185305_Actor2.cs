@@ -8,11 +8,11 @@ namespace api_peliculas.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "descricao",
-                table: "T_Actor");
+                table: "T_Usuario");
 
             migrationBuilder.AlterColumn<string>(
                 name: "name",
-                table: "T_Actor",
+                table: "T_Usuario",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "",
@@ -22,14 +22,14 @@ namespace api_peliculas.Migrations
 
             migrationBuilder.AddColumn<string>(
                 name: "biografia",
-                table: "T_Actor",
+                table: "T_Usuario",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "");
 
             migrationBuilder.AddColumn<bool>(
                 name: "estado",
-                table: "T_Actor",
+                table: "T_Usuario",
                 type: "bit",
                 nullable: false,
                 defaultValue: false);
@@ -39,15 +39,15 @@ namespace api_peliculas.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "biografia",
-                table: "T_Actor");
+                table: "T_Usuario");
 
             migrationBuilder.DropColumn(
                 name: "estado",
-                table: "T_Actor");
+                table: "T_Usuario");
 
             migrationBuilder.AlterColumn<string>(
                 name: "name",
-                table: "T_Actor",
+                table: "T_Usuario",
                 type: "nvarchar(max)",
                 nullable: true,
                 oldClrType: typeof(string),
@@ -55,7 +55,7 @@ namespace api_peliculas.Migrations
 
             migrationBuilder.AddColumn<string>(
                 name: "descricao",
-                table: "T_Actor",
+                table: "T_Usuario",
                 type: "nvarchar(max)",
                 nullable: true);
         }

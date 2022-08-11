@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace api_peliculas.Entidades
 {
-    public class Actor
+    public class Usuario
     {
         [Key]
         public int codigo { get; set; }
